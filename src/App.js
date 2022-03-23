@@ -8,6 +8,7 @@ function App() {
       <div className="card--block">
         {item.id > 1 && <hr />}
         <Card
+          key={item.id}
           img={item.image}
           location={item.location}
           googleMapsUrl={item.googleMapsUrl}
